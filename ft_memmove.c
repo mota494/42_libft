@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:35:44 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/04 11:19:30 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:40:30 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,10 @@ void *ft_memmove(void *dest, const void *src, size_t n){
 
 	tosrc = src;
 	todest = dest;
-	if(todest < tosrc)
-	{
-		ft_memcpy(dest, src, n);
-		return (dest);
-	}
-	else
-	{
-		while(n > 0)
-		{
-			todest[n] = tosrc[n];
-			n--;
-		}
-		return (dest);
-	}
+	(void)tosrc;
+	(void)todest;
+	(void)n;
+	return (dest);
 }
 
 // #include <stdio.h>
