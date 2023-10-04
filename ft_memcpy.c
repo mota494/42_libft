@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:06:40 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/04 12:15:56 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 12:52:56 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,30 +21,24 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	tosrc = (unsigned char *)src;
 	todest = (unsigned char *)dest;
-	if(src < dest)
+	while(i < n)
 	{
-		while(n > 0)
-		{
-			todest[n] = tosrc[n];
-			n--;
-		}
-	}
-	else
-	{
-		while(i < n)
-		{
-			todest[i] = tosrc[i];
-			i++;
-		}
+		todest[i] = tosrc[i];
+		i++;
 	}
 	return (dest);
 }
 // #include <stdio.h>
+// #include <string.h>
 // int main()
 // {
-// 	char str[] = "Hello World!";
-// 	char str2[] = "Hello World!";
-// 	ft_memcpy(str, str2, 5);
+// 	char str[] = "1234 5678";
+// 	char str2[] = "9012 3456";
+// 	char strCPY[] = "1234 5678";
+// 	char str2CPY[] = "9012 3456";
+// 	ft_memcpy(str, str2, 9);
 // 	printf("%s\n", str);
+// 	memcpy(strCPY, str2CPY, 9);
+// 	printf("%s\n", strCPY);
 // 	return (0);
 // }
