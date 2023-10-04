@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 14:35:36 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/03 17:32:45 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:20:11 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ void	*ft_memset(void *s, int c, size_t n)
 		ptr[i++] = toin;
 	return (s);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char str[] = "Hello World!";
+// 	ft_memset(str, 'a', 5);
+// 	printf("%s\n", str);
+// 	return (0);
+// }

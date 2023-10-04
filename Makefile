@@ -19,7 +19,7 @@ clean:
 fclean:
 	$(RM) $(NAME)
 
-re: all
+re: fclean all
 
 ##DELETE BEFORE HANDING IN, ONLY USED FOR TESTING
 exec:

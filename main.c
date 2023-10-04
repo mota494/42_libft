@@ -29,5 +29,6 @@ int main(void){
 	printf("\x1B[35m========memset========\e[0m\nOutput: %s\n\n", clean);
 	printf("\x1B[35m========strlcpy========\e[0m\nSource: %s\nDestination: %s\nOutput: %zu\n\n", str, str2, ft_strlcpy());
 	printf("\x1B[35m========strlen========\e[0m\nInput: %s\nOutput: %zu\n\n", str, ft_strlen(str));
+	
 	return (0);
 }

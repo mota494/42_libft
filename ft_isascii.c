@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:16:22 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/03 15:54:02 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:10:20 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,10 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	int a = 980;
+// 	printf("%d\n", ft_isascii(a));
+// 	return (0);
+// }

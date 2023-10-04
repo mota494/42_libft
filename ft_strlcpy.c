@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 17:43:41 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/04 10:38:33 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:20:51 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,12 @@ size_t strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (i);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char src[] = "Hello World!";
+// 	char dst[5];
+// 	strlcpy(dst, src, 5);
+// 	printf("%s\n", dst);
+// 	return (0);
+// }

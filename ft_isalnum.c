@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:16:08 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/04 10:37:57 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:09:02 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,11 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+// #include <stdio.h>
+
+// int main()
+// {
+// 	char c = 'a';
+// 	printf("%d\n", ft_isalnum(c));
+// 	return (0);
+// }

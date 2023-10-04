@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:16:30 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/03 15:02:54 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:12:09 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,10 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char c = '9';
+// 	printf("%d\n", ft_isdigit(c));
+// 	return (0);
+// }
