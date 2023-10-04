@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 16:06:40 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/03 16:30:33 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/04 10:37:57 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,4 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+

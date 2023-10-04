@@ -23,7 +23,7 @@ int main(void){
 	ft_memcpy(str2, str, 5);
 	printf("Output: %s\n\n", str2);
 	printf("\x1B[35m========memmove========\e[0m\nSource: %s\nDestination: %s\n", strCPY, str2CPY);
-	ft_memcpy(str2CPY, strCPY, 5);
+	ft_memmove(str2CPY, strCPY, 5);
 	printf("Output: %s\n\n", str2CPY);
 	ft_memset(clean, 'M', 5);
 	printf("\x1B[35m========memset========\e[0m\nOutput: %s\n\n", clean);
