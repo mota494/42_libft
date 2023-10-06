@@ -6,31 +6,35 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 17:43:41 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/04 11:20:51 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/06 10:14:11 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t strlcpy(char *dst, const char *src, size_t size)
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t i;
+	size_t len;
 
 	i = 0;
-	while(i < size)
+	len = ft_strlen(src);
+	if(size == 0)
+		return (len);
+	while(i < (size - 1) && src[i] != '\0' && len != 0)
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (i);
+	return (len);
 }
 // #include <stdio.h>
 // int main()
 // {
-// 	char src[] = "Hello World!";
-// 	char dst[5];
-// 	strlcpy(dst, src, 5);
+// 	char src[10] = "";
+// 	char dst[0];
+// 	printf("%zu\n", ft_strlcpy(dst, src, 9));
 // 	printf("%s\n", dst);
 // 	return (0);
 // }

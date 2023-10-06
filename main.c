@@ -8,6 +8,8 @@ int main(void){
 	char str2[] = "IPSUM_LOREM";
 	char strCPY[] = "LOREM_IPSUM";
 	char str2CPY[] = "IPSUM_LOREM";
+	char str3[] = "LOREM_IPSUM";
+	char str4[] = "IPSUM_LOREM";
 	char tozero[] = "domingo";
 	char clean[20];
 
@@ -27,7 +29,7 @@ int main(void){
 	printf("Output: %s\n\n", str2CPY);
 	ft_memset(clean, 'M', 5);
 	printf("\x1B[35m========memset========\e[0m\nOutput: %s\n\n", clean);
-	printf("\x1B[35m========strlcpy========\e[0m\nSource: %s\nDestination: %s\nOutput: %zu\n\n", str, str2, ft_strlcpy());
+	printf("\x1B[35m========strlcpy========\e[0m\nSource: %s\nDestination: %s\nOutput: %zu\n\n", str3, str4, ft_strlcpy(str3, str4, 5));
 	printf("\x1B[35m========strlen========\e[0m\nInput: %s\nOutput: %zu\n\n", str, ft_strlen(str));
 	return (0);
 }
