@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/03 13:16:16 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/06 11:05:49 by mloureir         ###   ########.fr       */
+/*   Created: 2023/10/06 11:06:35 by mloureir          #+#    #+#             */
+/*   Updated: 2023/10/06 11:53:41 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	char	*savestr;
+	char	check;
+	int	i;
+
+	savestr = (char *)s;
+	i = 0;
+	check = c;
+	if(check == 0)
+		return (((char *)s + ft_strlen(s)));
+	while(s[i] != '\0')
+	{
+		check = c;
+		if(s[i] == check)
+			return (savestr);
+		savestr++;
+		i++;
+	}
+	return (NULL);
 }
-// #include <stdio.h>
-// int main()
-// {
-// 	char c = 'a';
-// 	printf("%d\n", ft_isalpha(c));
-// 	return (0);
-// }
