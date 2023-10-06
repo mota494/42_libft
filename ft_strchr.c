@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	char	*savestr;
 	char	check;
-	int	i;
+	int		i;
 
 	savestr = (char *)s;
 	i = 0;

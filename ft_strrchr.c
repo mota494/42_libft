@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 11:58:54 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/06 12:03:14 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/06 12:55:40 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ char	*ft_strrchr(const char *s, int c)
 {
 	char	*savestr;
 	char	*lastfound;
-	int	found;
-	int	i;
+	int		found;
+	int		i;
 
 	savestr = (char *)s;
 	i = 0;
@@ -34,7 +34,7 @@ char	*ft_strrchr(const char *s, int c)
 		savestr++;
 		i++;
 	}
-	if(found == 1)
+	if (found == 1)
 		return (lastfound);
 	return (NULL);
 }
