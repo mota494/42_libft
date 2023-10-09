@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 10:29:40 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/09 10:43:07 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/09 10:52:35 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	strl = ft_strlen(s);
-	if(len >= strl)
+	if (len >= strl)
 		len = strl - start;
 	if (start >= strl)
 	{
