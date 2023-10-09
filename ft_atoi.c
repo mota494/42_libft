@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 15:43:40 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/06 16:03:53 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/09 09:59:03 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(const char *nptr)
 	toreturn = 0;
 	index = 0;
 	pos = 1;
-	while (nptr[index] >= 9 && nptr[index] <= 13 || nptr[index] == 32)
+	while ((nptr[index] >= 9 && nptr[index] <= 13) || nptr[index] == 32)
 		index++;
 	if (nptr[index] == '-' || nptr[index] == '+')
 	{
