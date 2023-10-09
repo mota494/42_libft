@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 10:29:40 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/09 10:52:35 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/09 11:13:59 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	toret = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!toret)
 		return (NULL);
-	while (i < len)
-	{
+	while (i++ < len)
 		toret[i] = s[start + i];
-		i++;
-	}
 	return (toret);
 }
 // #include <stdio.h>
