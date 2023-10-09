@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:27:43 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/09 10:27:50 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/09 10:29:57 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
