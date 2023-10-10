@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:46:51 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/10 16:44:08 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/10 16:44:36 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ char	*ft_itoa(int n)
 		free(toret);
 		toret = ft_strdup("0");
 	}
-	while(n != 0)
+	while (n != 0)
 	{
-		if(n < 0)
+		if (n < 0)
 			toret[i] = ((n % 10) * -1) + 48;
 		else
 			toret[i - 1] = (n % 10) + 48;
