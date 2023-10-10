@@ -6,11 +6,11 @@
 /*   By: mloureir <mloureir@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:46:51 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/10 16:42:15 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/10 16:44:08 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-#include <stdio.h>
 
 size_t	alocsize(int n)
 {
@@ -24,8 +24,6 @@ size_t	alocsize(int n)
 	}
 	return (i);
 }
-
-
 
 char	*ft_itoa(int n)
 {
