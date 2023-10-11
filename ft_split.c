@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 16:32:33 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/11 09:42:05 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/11 12:38:36 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,28 +99,3 @@ char	**ft_split(char const *s, char c)
 		split = writestr(s, c, split, wordc);
 	return (split);
 }
-
-//#include <stdio.h>
-//int	main(void)
-//{
-//	char	*str;
-//	char	**arr;
-//
-//	str = "hello!";
-//	arr = ft_split(str, ' ');
-//	printf("%s", arr[0]);
-//	str = "The cake is a lie!";
-//	arr = ft_split(str, ' ');
-//	printf("%s", arr[0]);
-//	printf("%s", arr[1]);
-//	printf("%s", arr[2]);
-//	printf("%s", arr[3]);
-//	printf("%s", arr[4]);
-//	free(arr[0]);
-//	free(arr[1]);
-//	free(arr[2]);
-//	free(arr[3]);
-//	free(arr[4]);
-//	free(arr);
-//	return (0);
-//}
