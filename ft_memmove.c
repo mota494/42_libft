@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	*ft_reversememcpy(void *dest, const void *src, size_t n)
+static void	*ft_reversememcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*tosrc;
 	unsigned char	*todest;

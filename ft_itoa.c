@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	alocsize(int n)
+static size_t	alocsize(int n)
 {
 	size_t	i;
 

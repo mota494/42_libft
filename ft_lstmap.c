@@ -6,13 +6,13 @@
 /*   By: mloureir <mloureir@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 11:49:10 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/12 12:45:15 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/12 12:50:23 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_newlist(t_list *lst, void *(*f)(void *), void (*del)(void *))
+static t_list	*newlt(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newlist;
 	void	*cont;
@@ -35,7 +35,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*savelst;
 	void	*cont;
 
-	newlist = ft_newlist(lst, f, del);
+	newlist = newlt(lst, f, del);
 	if (!newlist)
 		return (NULL);
 	savelst = newlist;

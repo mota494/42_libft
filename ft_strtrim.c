@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	isset(char curr, char const *set)
+static int	isset(char curr, char const *set)
 {
 	int	i;
 

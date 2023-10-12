@@ -35,7 +35,7 @@ static int	wordcount(char const *s, char c)
 	return (count);
 }
 
-size_t	wordlen(char const *s, char c)
+static size_t	wordlen(char const *s, char c)
 {
 	size_t	len;
 
@@ -45,7 +45,7 @@ size_t	wordlen(char const *s, char c)
 	return (len);
 }
 
-char	**strclean(char **split, size_t wordc)
+static char	**strclean(char **split, size_t wordc)
 {
 	size_t	i;
 
@@ -59,7 +59,7 @@ char	**strclean(char **split, size_t wordc)
 	return (0);
 }
 
-char	**writestr(char const *s, char c, char **split, size_t wordc)
+static char	**writestr(char const *s, char c, char **split, size_t wordc)
 {
 	size_t	count;
 	int		i;
