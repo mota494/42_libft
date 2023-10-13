@@ -73,7 +73,7 @@ static char	**writestr(char const *s, char c, char **split, size_t wordc)
 		while (s[i] == c && s[i])
 			i++;
 		split[count] = ft_calloc(wordlen(&s[i], c) + 1, sizeof(char));
-		if (!split)
+		if (!split[count])
 			strclean(split, wordc);
 		while (s[i] != c && s[i])
 		{
@@ -99,3 +99,18 @@ char	**ft_split(char const *s, char c)
 		split = writestr(s, c, split, wordc);
 	return (split);
 }
+
+/*#include <stdio.h>
+
+int main()
+{
+    char    *string = "Eu x sou o x teste x";
+    char    c = "x";
+    char    **newstring;
+
+    newstring = ft_split(string, c);
+    printf("%s", newstring[0]);
+    printf("%s", newstring[1]);
+    printf("%s", newstring[2]);
+    return (0);
+}*/

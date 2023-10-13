@@ -9,7 +9,7 @@ BOBJS=$(BSRC:.c=.o)
 
 all: $(NAME)
 
-%.o : %.c #regra para todos os ficheiros .o, quando um nao existe chama esta funcao e compila todos que nao existam para .o
+%.o : %.c
 	$(CC) $(FLAGS) -c $*.c -o $*.o
 
 $(NAME): $(OBJS)
