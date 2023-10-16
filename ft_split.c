@@ -74,7 +74,7 @@ static char	**writestr(char const *s, char c, char **split, size_t wordc)
 			i++;
 		split[count] = ft_calloc(wordlen(&s[i], c) + 1, sizeof(char));
 		if (!split[count])
-			strclean(split, wordc);
+			return (strclean(split, wordc));
 		while (s[i] != c && s[i])
 		{
 			split[count][j] = s[i];
