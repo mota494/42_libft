@@ -4,7 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/score-125%2F100-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 ![Static Badge](https://img.shields.io/badge/language-C-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 
-#### 42 libft is the first project of the common core, this project makes the student recreate some standard C library functions and some addition functions that will be useful throughout the cursus.
+42 libft is the first project of the common core, this project makes the student recreate some standard C library functions and some addition functions that will be useful throughout the cursus.
 
 </div>
 
