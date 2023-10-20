@@ -6,6 +6,8 @@
 
 42 libft is the first project of the common core, this project makes the student recreate some standard C library functions and some addition functions that will be useful throughout the cursus.
 
+If you're from 42 and you just started libft i highly recommend you to use this reposotory more as a support and develop your own functions and tests. If you need help you can send me a message in any of my socials
+
 </div>
 
 # Standard C Library
