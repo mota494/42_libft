@@ -4,6 +4,8 @@
 ![Static Badge](https://img.shields.io/badge/score-125%2F100-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 ![Static Badge](https://img.shields.io/badge/language-C-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 
+[![Static Badge](https://img.shields.io/badge/Music%20Suggestion-Click%20Me?style=for-the-badge&logo=YouTube&logoColor=%23000000&labelColor=%23FFFFFF&color=%23FF0000)](https://www.youtube.com/watch?v=1JNmz17gnMw)
+
 42 libft is the first project of the common core, this project makes the student recreate some standard C library functions and some addition functions that will be useful throughout the cursus.
 
 If you're from 42 and you just started libft i highly recommend you to use this reposotory more as a support and develop your own functions and tests. If you need help you can send me a message in any of my socials
