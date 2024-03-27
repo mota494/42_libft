@@ -12,11 +12,11 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	toreturn;
+	int	toret;
 	int	index;
 	int	pos;
 
-	toreturn = 0;
+	toret = 0;
 	index = 0;
 	pos = 1;
 	while ((nptr[index] >= 9 && nptr[index] <= 13) || nptr[index] == 32)
@@ -29,9 +29,9 @@ int	ft_atoi(const char *nptr)
 	}
 	while (nptr[index] >= 48 && nptr[index] <= 57)
 	{
-		toreturn = toreturn * 10;
-		toreturn = toreturn + (nptr[index] - 48);
+		toret = toret * 10;
+		toret = toret + (nptr[index] - 48);
 		index++;
 	}
-	return (toreturn * pos);
+	return (toret * pos);
 }
