@@ -23,5 +23,8 @@ fclean:
 
 re: fclean all
 
+exec:
+	cc -w main.c $(SRC)
+
 bonus: $(OBJS) $(BOBJS)
 	ar rc $(NAME) $(OBJS) $(BOBJS)
