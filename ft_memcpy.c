@@ -23,7 +23,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	todest = (unsigned char *)dest;
 	if (src == NULL && dest == NULL)
 		return (NULL);
-	while (i < n)
+	while (i < n && tosrc[i])
 	{
 		todest[i] = tosrc[i];
 		i++;

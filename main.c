@@ -299,6 +299,22 @@ void	test_memcmp()
 		test_passed(4);
 	else
 		test_not(4);
+	if (ft_memcmp(str4, str2, strlen(str4)) == memcmp(str4, str2, strlen(str4)))
+		test_passed(5);
+	else
+		test_not(5);
+}
+
+void	test_memcpy()
+{
+	const char	str1[] = ":>?<?>:{}";
+	const char	dest1[] = "";
+	const char	str2[] = "";
+	const char	dest2[] = "brendon";
+	const char	str3[] = "1234";
+	const char	dest3[] = "5678";
+	
+	printf_func("memcpy");
 }
 
 int main(int argc, char **argv)
@@ -317,4 +333,5 @@ int main(int argc, char **argv)
 	test_itoa();
 	test_memchr();
 	test_memcmp();
+	test_memcpy();
 }
