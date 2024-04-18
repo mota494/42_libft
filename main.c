@@ -253,6 +253,54 @@ void	test_itoa()
 	free(tofre);
 }
 
+void	test_memchr()
+{
+	const char	str[] = "ABCDEFGHIJK";
+	void	*er;
+
+	printf_func("memchr");
+	if (strcmp(memchr(str, 'C', strlen(str)), ft_memchr(str, 'C', strlen(str))) == 0)
+		test_passed(1);
+	else
+		test_not(1);
+	er = ft_memchr(str, 'P', strlen(str));
+	if (er == NULL)
+		test_passed(2);
+	else
+		test_not(2);
+	er = ft_memchr(str, 'C', 0);
+	if (er == NULL)
+		test_passed(3);
+	else
+		test_not(3);
+}
+
+void	test_memcmp()
+{
+	const char	str1[] = "ABCDEFGHI      JK";
+	const char	str2[] = "ABCDEFGHI      JK ";
+	const char	str3[] = "ABCDEFGHI      JK";
+	const char	str4[] = "";
+
+	printf_func("memcmp");
+	if (ft_memcmp(str1, str3, 0) == memcmp(str1, str3, 0))
+		test_passed(1);
+	else
+		test_not(1);
+	if (ft_memcmp(str1, str3, 90) == memcmp(str1, str3, 90))
+		test_passed(2);
+	else
+		test_not(2);
+	if (ft_memcmp(str1, str2, strlen(str1)) == memcmp(str1, str2, strlen(str1)))
+		test_passed(3);
+	else
+		test_not(3);
+	if (ft_memcmp(str1, str2, strlen(str2)) == memcmp(str1, str2, strlen(str2)))
+		test_passed(4);
+	else
+		test_not(4);
+}
+
 int main(int argc, char **argv)
 {
 	char	test_atoi_null[20] = "avca4930";
@@ -267,4 +315,6 @@ int main(int argc, char **argv)
 	test_isdigit();
 	test_isprint();
 	test_itoa();
+	test_memchr();
+	test_memcmp();
 }
