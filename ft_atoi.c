@@ -14,7 +14,7 @@ int	ft_atoi(const char *nptr)
 {
 	int	toreturn;
 	int	index;
-	int	pos;
+	int										pos;
 
 	toreturn = 0;
 	index = 0;
